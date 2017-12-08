@@ -6,6 +6,7 @@
 Data_path = 'F:\Work\Data\SALD\T'            % where the T1 Nifti data are located
 FWHM = 6;                                    % Gaussian FWHM
 Modulation = 1;                              % 1:modulation; 0;no modulation
+%------------------------------------------------------------------------------------%
 %% VBM8 Denosing Filter 
 cd(Data_path);
 Sublist = dir('*.nii');
