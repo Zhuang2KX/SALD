@@ -1,0 +1,23 @@
+num_cores_per_subject: 1
+
+num_subjects_at_once: 1
+
+output_directory: /home/ZKX/Desktop/R
+
+working_directory: /home/ZKX/Desktop/current
+
+template_brain_for_anat: /usr/local/fsl/data/standard/MNI152_T1_1mm_brain.nii.gz
+
+template_skull_for_anat: /usr/local/fsl/data/standard/MNI152_T1_1mm.nii.gz
+
+write_all_outputs: True
+
+start_idx: 0
+
+stop_idx: End
+
+slice_timing_correction: True
+
+write_report: False
+
+write_graph: False
