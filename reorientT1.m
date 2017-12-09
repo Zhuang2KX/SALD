@@ -4,7 +4,7 @@ function reorientT1(T1Img)
 %% Input
 %  -T1Img: where the T1 data are located
 % --------------------------------------------------------------------------------%
-%%
+
 cd(T1Img);
 list = dir;
 list = list(3:end,:);
