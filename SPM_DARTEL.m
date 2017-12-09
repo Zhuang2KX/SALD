@@ -16,7 +16,6 @@ end
 matlabbatch{1}.spm.tools.vbm8.tools.sanlm.data = SUB;
 spm('defaults', 'FMRI');
 spm_jobman('run', matlabbatch);
-clear matlabbatch;
 
 %% SPM8 New Segment
 SPM_path = which('spm.m');
@@ -60,7 +59,6 @@ matlabbatch{1}.spm.tools.preproc8.warp.samp = 3;
 matlabbatch{1}.spm.tools.preproc8.warp.write = [0 0];
 spm('defaults', 'FMRI');
 spm_jobman('run', matlabbatch);
-clear matlabbatch;
 
 %% DARTEL Create Templete
 Sub_c1 = dir('rc1*.nii');
@@ -101,7 +99,6 @@ matlabbatch{1}.spm.tools.dartel.warp.settings.optim.cyc = 3;
 matlabbatch{1}.spm.tools.dartel.warp.settings.optim.its = 3;
 spm('defaults', 'FMRI');
 spm_jobman('run',matlabbatch);   
-clear matlabbatch;
 
 %% Normalise to MNI Space
 U = dir('u_*.nii');
@@ -123,7 +120,6 @@ matlabbatch{1}.spm.tools.dartel.mni_norm.preserve = Modulation;
 matlabbatch{1}.spm.tools.dartel.mni_norm.fwhm = [FWHM FWHM FWHM];
 spm('defaults', 'FMRI');
 spm_jobman('run',matlabbatch); 
-clear matlabbatch;
 
 %% Organize Data
 if Modulation == 1
