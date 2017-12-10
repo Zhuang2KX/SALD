@@ -15,7 +15,7 @@ tmpl=[spmDir 'canonical/avg152T1.nii'];
 vg=spm_vol(tmpl);
 flags.regtype='rigid';
 
-S = S = dir('*.nii');
+S = dir('*.nii');
 if isempty(S) == 1;
     for i = 1:length(list);
         fildir = [T1Img,'\',list(i).name];
