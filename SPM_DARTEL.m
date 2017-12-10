@@ -1,6 +1,5 @@
 %% SPM Batch of DARTEL
 %   
-%  Z.K.X.   2017/12/08
 %------------------------------------------------------------------------------------%
 %% Setting
 Data_path = 'F:\Work\Data\SALD\T'            % where the T1 Nifti data are located
