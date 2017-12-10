@@ -137,5 +137,5 @@ elseif Modulation == 0
     movefile('swc2*.nii','GWD_');
 end
 cd ..
-copyfile(fullfile(Data_path,'GM*'),pwd)
-copyfile(fullfile(Data_path,'GW*'),pwd)
+copyfile(fullfile(Data_path,M),pwd)
+copyfile(fullfile(Data_path,W),pwd)
