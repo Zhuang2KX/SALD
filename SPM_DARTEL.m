@@ -61,7 +61,7 @@ spm('defaults', 'FMRI');
 spm_jobman('run', matlabbatch);
 clear matlabbatch;
 
-%% DARTEL Create Templete
+%% DARTEL Create Template
 Sub_c1 = dir('rc1*.nii');
 Sub_c2 = dir('rc2*.nii');
 a = struct2cell(Sub_c1);
